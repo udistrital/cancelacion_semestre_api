@@ -15,7 +15,6 @@ import (
 
 func init() {
 	ns := beego.NewNamespace("/v1",
-<<<<<<< HEAD
 
 		beego.NSNamespace("/tipo_cancelacion_semestre",
 			beego.NSInclude(
@@ -32,7 +31,8 @@ func init() {
 		beego.NSNamespace("/cancelacion_semestre",
 			beego.NSInclude(
 				&controllers.CancelacionSemestreController{},
-=======
+			),
+		),
 		beego.NSNamespace("/object",
 			beego.NSInclude(
 				&controllers.ObjectController{},
@@ -41,7 +41,6 @@ func init() {
 		beego.NSNamespace("/user",
 			beego.NSInclude(
 				&controllers.UserController{},
->>>>>>> 9e7d11bd4d786705bcdcfd3f9612c17388e95716
 			),
 		),
 	)
