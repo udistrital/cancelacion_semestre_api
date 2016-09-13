@@ -31,4 +31,7 @@ $ xdg-open http://127.0.0.1:8080/swagger/
 
 El front-end del proyecto y las instrucciones de instalación se encuentran en https://github.com/JorgeUlises/oas_fe_cancelacion_semestre
 
+#MODELO
+-------
+![screenshot](./scripts/model/cancelacion_semestre.png)
 
