@@ -57,8 +57,8 @@ ALTER TABLE academica_estudiantes.tipo_cancelacion_semestre OWNER TO cancelacion
 -- DROP TABLE IF EXISTS academica_estudiantes.estado_cancelacion_semestre CASCADE;
 CREATE TABLE academica_estudiantes.estado_cancelacion_semestre(
 	id serial NOT NULL,
-	nombre smallint NOT NULL,
-	descripcion smallint,
+	nombre character varying(50) NOT NULL,
+	descripcion character varying(200),
 	CONSTRAINT estado_cancelacion_semestre_pk PRIMARY KEY (id)
 
 );
@@ -78,7 +78,7 @@ CREATE TABLE academica_estudiantes.cancelacion_semestre(
 	id serial NOT NULL,
 	id_tipo integer NOT NULL,
 	id_estado integer NOT NULL,
-	id_estudiante smallint,
+	id_estudiante bigint,
 	uid integer,
 	motivo character varying(2000),
 	observaciones character varying(2000),

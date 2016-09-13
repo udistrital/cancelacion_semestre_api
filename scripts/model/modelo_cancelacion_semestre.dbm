@@ -3,7 +3,7 @@
 CAUTION: Do not modify this file unless you know what you are doing.
          Unexpected results may occur if the code is changed deliberately.
 -->
-<dbmodel pgmodeler-ver="0.8.1" last-position="0,62" last-zoom="0.9"
+<dbmodel pgmodeler-ver="0.8.1" last-position="0,0" last-zoom="0.9"
 	 default-schema="public" default-owner="postgres">
 <role name="cancelacion_semestre"
       encrypted="true"
@@ -25,7 +25,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="academica_estudiantes"/>
 	<role name="cancelacion_semestre"/>
 	<comment><![CDATA[especifica el tipo de cancelacion, retiro voluntario o no renovacion de matricula(aplazar semestre)]]></comment>
-	<position x="25.8889" y="277.667"/>
+	<position x="311.444" y="532.111"/>
 	<column name="id" not-null="true">
 		<type name="serial"/>
 		<comment><![CDATA[una secuencia que identifica el tipo de cancelacion]]></comment>
@@ -46,17 +46,17 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="estado_cancelacion_semestre">
 	<schema name="academica_estudiantes"/>
 	<role name="cancelacion_semestre"/>
-	<position x="1418.89" y="292.889"/>
+	<position x="1080" y="529.556"/>
 	<column name="id" not-null="true">
 		<type name="serial"/>
 		<comment><![CDATA[identificador serial de estado_cancelacion_semestre]]></comment>
 	</column>
 	<column name="nombre" not-null="true">
-		<type name="smallint"/>
+		<type name="character varying" length="50"/>
 		<comment><![CDATA[Nombre corto del estado de la cancelacion]]></comment>
 	</column>
 	<column name="descripcion">
-		<type name="smallint"/>
+		<type name="character varying" length="200"/>
 		<comment><![CDATA[descripcion detallada del significado del estado de la cancelacion]]></comment>
 	</column>
 	<constraint name="estado_cancelacion_semestre_pk" type="pk-constr" table="academica_estudiantes.estado_cancelacion_semestre">
@@ -81,7 +81,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<comment><![CDATA[identificador de la tabla estado_cancelacion_semestre]]></comment>
 	</column>
 	<column name="id_estudiante">
-		<type name="smallint"/>
+		<type name="bigint"/>
 		<comment><![CDATA[es el codigo del estudiante que solicita la cancelacion]]></comment>
 	</column>
 	<column name="uid">
