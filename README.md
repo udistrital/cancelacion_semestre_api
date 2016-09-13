@@ -9,9 +9,22 @@ Este es el back-end del proyecto cancelación de semestre, es un API RESTful con
 - docker: https://docs.docker.com/engine/installation/linux
 
 Para tener el proyecto localmente se puede ejecutar:
+
+1) Descargar el software a través del método ***go get***:
 ```bash
 $ go get github.com/JorgeUlises/oas_be_cancelacion_semestre
+```
+2) Ingresar al directorio del proyecto:
+```bash
 $ cd $GOPATH/github.com/JorgeUlises/oas_be_cancelacion_semestre
+```
+3) Ejecutar una instancia de ***PostgreSQL*** en ***docker*** y ejecutar el script de generación de la base de datos:
+```bash
+$ docker run -d -p 5432:5432 -e POSTGRESQL_USER=cancelacion_semestre -e POSTGRESQL_PASS=docker -e POSTGRESQL_DB=cancelacion_semestre orchardup/postgresql
+$ psql -h localhost -d udistrital -U cancelacion_semestre -W < model/cancelacion_semestre.sql
+```
+4) Ejecutar el proyecto con ***bee*** y abrir la interfaz de ***swagger*** (swagger-ui) con el que se puede consumir el servicio REST con el navegador deseado:
+```bash
 $ bee run -downdoc=true -gendoc=true
 $ xdg-open http://127.0.0.1:8080/swagger/
 ```
