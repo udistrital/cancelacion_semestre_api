@@ -9,7 +9,7 @@ import (
 )
 
 func init() {
-	orm.RegisterDataBase("default", "postgres", "postgres://cancelacion_semestre:docker@localhost:5432/udistrital?sslmode=disable")
+	orm.RegisterDataBase("default", "postgres", "postgres://cancelacion_semestre:docker@localhost:5432/udistrital?sslmode=disable&search_path=academica_estudiantes")
 }
 
 func main() {
