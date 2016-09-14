@@ -51,7 +51,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="serial"/>
 		<comment><![CDATA[identificador serial de estado_cancelacion_semestre]]></comment>
 	</column>
-	<column name="nombre" not-null="true">
+	<column name="estado" not-null="true">
 		<type name="character varying" length="50"/>
 		<comment><![CDATA[Nombre corto del estado de la cancelacion]]></comment>
 	</column>

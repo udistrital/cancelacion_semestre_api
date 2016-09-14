@@ -11,8 +11,8 @@ import (
 
 type EstadoCancelacionSemestre struct {
 	Id          int   `orm:"column(id);pk"`
-	Nombre      int16 `orm:"column(nombre)"`
-	Descripcion int16 `orm:"column(descripcion);null"`
+	Estado      string `orm:"column(estado)"`
+	Descripcion string `orm:"column(descripcion);null"`
 }
 
 func (t *EstadoCancelacionSemestre) TableName() string {

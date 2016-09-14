@@ -57,7 +57,7 @@ ALTER TABLE academica_estudiantes.tipo_cancelacion_semestre OWNER TO cancelacion
 -- DROP TABLE IF EXISTS academica_estudiantes.estado_cancelacion_semestre CASCADE;
 CREATE TABLE academica_estudiantes.estado_cancelacion_semestre(
 	id serial NOT NULL,
-	nombre character varying(50) NOT NULL,
+	estado character varying(50) NOT NULL,
 	descripcion character varying(200),
 	CONSTRAINT estado_cancelacion_semestre_pk PRIMARY KEY (id)
 
@@ -65,7 +65,7 @@ CREATE TABLE academica_estudiantes.estado_cancelacion_semestre(
 -- ddl-end --
 COMMENT ON COLUMN academica_estudiantes.estado_cancelacion_semestre.id IS 'identificador serial de estado_cancelacion_semestre';
 -- ddl-end --
-COMMENT ON COLUMN academica_estudiantes.estado_cancelacion_semestre.nombre IS 'Nombre corto del estado de la cancelacion';
+COMMENT ON COLUMN academica_estudiantes.estado_cancelacion_semestre.estado IS 'Nombre corto del estado de la cancelacion';
 -- ddl-end --
 COMMENT ON COLUMN academica_estudiantes.estado_cancelacion_semestre.descripcion IS 'descripcion detallada del significado del estado de la cancelacion';
 -- ddl-end --
