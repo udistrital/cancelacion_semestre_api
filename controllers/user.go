@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/JorgeUlises/oas_be_cancelacion_semestre/models"
+	"github.com/juusechec/oas_be_cancelacion_semestre/models"
 	"encoding/json"
 
 	"github.com/astaxie/beego"

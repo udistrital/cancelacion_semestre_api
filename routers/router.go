@@ -8,7 +8,7 @@
 package routers
 
 import (
-	"github.com/JorgeUlises/oas_be_cancelacion_semestre/controllers"
+	"github.com/juusechec/oas_be_cancelacion_semestre/controllers"
 
 	"github.com/astaxie/beego"
 )

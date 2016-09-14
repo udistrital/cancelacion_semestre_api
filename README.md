@@ -12,11 +12,11 @@ Para tener el proyecto localmente se puede ejecutar:
 
 1) Descargar el software a través del método ***go get***:
 ```bash
-$ go get github.com/JorgeUlises/oas_be_cancelacion_semestre
+$ go get github.com/juusechec/oas_be_cancelacion_semestre
 ```
 2) Ingresar al directorio del proyecto:
 ```bash
-$ cd $GOPATH/github.com/JorgeUlises/oas_be_cancelacion_semestre
+$ cd $GOPATH/github.com/juusechec/oas_be_cancelacion_semestre
 ```
 3) Ejecutar una instancia de ***PostgreSQL*** en ***docker*** y ejecutar el script de generación de la base de datos:
 ```bash
@@ -29,7 +29,7 @@ $ bee run -downdoc=true -gendoc=true
 $ xdg-open http://127.0.0.1:8080/swagger/
 ```
 
-El front-end del proyecto y las instrucciones de instalación se encuentran en https://github.com/JorgeUlises/oas_fe_cancelacion_semestre
+El front-end del proyecto y las instrucciones de instalación se encuentran en https://github.com/juusechec/oas_fe_cancelacion_semestre
 
 #MODELO
 -------

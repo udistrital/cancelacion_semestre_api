@@ -3,7 +3,7 @@ package controllers
 import (
 	"encoding/json"
 	"errors"
-	"github.com/JorgeUlises/oas_be_cancelacion_semestre/models"
+	"github.com/juusechec/oas_be_cancelacion_semestre/models"
 	"strconv"
 	"strings"
 
