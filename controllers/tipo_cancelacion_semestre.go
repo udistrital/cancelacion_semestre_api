@@ -38,8 +38,8 @@ func (c *TipoCancelacionSemestreController) Post() {
 		c.SaveToFile("archivo", nombre)
 
 		notificador := components.Notificador{
-			From: "condor@udistrital.edu.co",
-			To:   "jorgenator2@yahoo.es",
+			From: "juusechec@correo.udistrital.edu.co",
+			To:   "naturalmentejorge@gmail.com",
 		}
 		notificador.Enviar()
 
