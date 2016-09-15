@@ -6,7 +6,7 @@ import (
 	"github.com/juusechec/oas_be_cancelacion_semestre/models"
 	"strconv"
 	"strings"
-
+  "fmt"
 	"github.com/astaxie/beego"
 )
 
@@ -30,6 +30,12 @@ func (c *TipoCancelacionSemestreController) URLMapping() {
 // @Failure 403 body is empty
 // @router / [post]
 func (c *TipoCancelacionSemestreController) Post() {
+	_, header, err := c.GetFile("archivo")
+	if err != nil {
+		fmt.Print("Error en archivo")
+	} else {
+		c.SaveToFile("archivo","/tmp/" + header.Filename)
+	}
 	var v models.TipoCancelacionSemestre
 	if err := json.Unmarshal(c.Ctx.Input.RequestBody, &v); err == nil {
 		if _, err := models.AddTipoCancelacionSemestre(&v); err == nil {
