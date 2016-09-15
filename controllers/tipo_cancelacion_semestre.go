@@ -3,10 +3,11 @@ package controllers
 import (
 	"encoding/json"
 	"errors"
+	"github.com/juusechec/oas_be_cancelacion_semestre/components"
 	"github.com/juusechec/oas_be_cancelacion_semestre/models"
 	"strconv"
 	"strings"
-  "fmt"
+
 	"github.com/astaxie/beego"
 )
 
@@ -31,10 +32,20 @@ func (c *TipoCancelacionSemestreController) URLMapping() {
 // @router / [post]
 func (c *TipoCancelacionSemestreController) Post() {
 	_, header, err := c.GetFile("archivo")
-	if err != nil {
-		fmt.Print("Error en archivo")
-	} else {
-		c.SaveToFile("archivo","/tmp/" + header.Filename)
+	if err == nil {
+		c.Ctx.Output.SetStatus(201)
+		var nombre = "/tmp/" + header.Filename
+		c.SaveToFile("archivo", nombre)
+
+		notificador := components.Notificador{
+			From: "condor@udistrital.edu.co",
+			To:   "jorgenator2@yahoo.es",
+		}
+		notificador.Enviar()
+
+		c.Data["json"] = "{'filename': '" + nombre + "'}"
+		c.ServeJSON()
+		return
 	}
 	var v models.TipoCancelacionSemestre
 	if err := json.Unmarshal(c.Ctx.Input.RequestBody, &v); err == nil {
