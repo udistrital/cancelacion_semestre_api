@@ -199,7 +199,7 @@ func init() {
 		beego.ControllerComments{
 			Method: "GetToken",
 			Router: `/getToken`,
-			AllowHTTPMethods: []string{"get"},
+			AllowHTTPMethods: []string{"post"},
 			Params: nil})
 
 }

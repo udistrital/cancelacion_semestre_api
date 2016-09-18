@@ -121,7 +121,7 @@ func (u *UserController) Logout() {
 // @Title getToken
 // @Description Get token from user session
 // @Success 200 {string} Obtain Token
-// @router /getToken [get]
+// @router /getToken [post]
 func (u *UserController) GetToken() {
 	username := u.Ctx.Input.Query("username")
 	password := u.Ctx.Input.Query("password")
