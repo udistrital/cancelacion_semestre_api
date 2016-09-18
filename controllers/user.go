@@ -123,8 +123,15 @@ func (u *UserController) Logout() {
 // @Success 200 {string} Obtain Token
 // @router /getToken [get]
 func (u *UserController) GetToken() {
-	et := jwtbeego.EasyToken{}
-	tokenString := et.GetToken()
+	username := u.Ctx.Input.Query("username")
+	password := u.Ctx.Input.Query("password")
+
+	tokenString := ""
+	if (username == "jorge" && password == "mipassword"){
+		et := jwtbeego.EasyToken{}
+		tokenString = et.GetToken()
+	}
+
 	u.Data["json"] = "{'tokenString': '" + tokenString + "'}"
 	u.ServeJSON()
 	return
