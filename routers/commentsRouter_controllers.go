@@ -195,4 +195,11 @@ func init() {
 			AllowHTTPMethods: []string{"get"},
 			Params: nil})
 
+	beego.GlobalControllerRouter["github.com/juusechec/oas_be_cancelacion_semestre/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/juusechec/oas_be_cancelacion_semestre/controllers:UserController"],
+		beego.ControllerComments{
+			Method: "GetToken",
+			Router: `/getToken`,
+			AllowHTTPMethods: []string{"get"},
+			Params: nil})
+
 }

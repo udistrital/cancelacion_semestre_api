@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 
 	"github.com/astaxie/beego"
+	"github.com/juusechec/jwt-beego"
 )
 
 // Operations about Users
@@ -117,3 +118,14 @@ func (u *UserController) Logout() {
 	u.ServeJSON()
 }
 
+// @Title getToken
+// @Description Get token from user session
+// @Success 200 {string} Obtain Token
+// @router /getToken [get]
+func (u *UserController) GetToken() {
+	et := jwtbeego.EasyToken{}
+	tokenString := et.GetToken()
+	u.Data["json"] = "{'tokenString': '" + tokenString + "'}"
+	u.ServeJSON()
+	return
+}

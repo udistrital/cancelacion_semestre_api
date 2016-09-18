@@ -21,6 +21,6 @@ func (n Notificador) Enviar() {
 
     d := gomail.NewPlainDialer("smtp.mail.yahoo.com", 25, "jorgenator2@yahoo.es", "password")
     if err := d.DialAndSend(m); err != nil {
-        panic(err)
+        //panic(err)
     }
 }
