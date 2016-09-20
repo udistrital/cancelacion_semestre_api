@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"github.com/juusechec/oas_be_cancelacion_semestre/models"
 	"encoding/json"
+	"github.com/juusechec/oas_be_cancelacion_semestre/models"
 
 	"github.com/astaxie/beego"
 	"github.com/juusechec/jwt-beego"
@@ -120,6 +120,8 @@ func (u *UserController) Logout() {
 
 // @Title getToken
 // @Description Get token from user session
+// @Param	username		query 	string	true		"The username for get token"
+// @Param	password		query 	string	true		"The password for get token"
 // @Success 200 {string} Obtain Token
 // @router /getToken [post]
 func (u *UserController) GetToken() {
@@ -127,8 +129,11 @@ func (u *UserController) GetToken() {
 	password := u.Ctx.Input.Query("password")
 
 	tokenString := ""
-	if (username == "jorge" && password == "mipassword"){
-		et := jwtbeego.EasyToken{}
+	if username == "jorge" && password == "mipassword" {
+		et := jwtbeego.EasyToken{
+			Username: "username",
+			Expires:  15000,
+		}
 		tokenString = et.GetToken()
 	}
 
