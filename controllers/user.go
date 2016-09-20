@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"time"
 	"encoding/json"
 	"github.com/juusechec/oas_be_cancelacion_semestre/models"
 
@@ -131,10 +132,10 @@ func (u *UserController) GetToken() {
 	tokenString := ""
 	if username == "jorge" && password == "mipassword" {
 		et := jwtbeego.EasyToken{
-			Username: "username",
-			Expires:  15000,
+			Username: username,
+			Expires:  time.Now().Unix() + 3600, //Segundos
 		}
-		tokenString = et.GetToken()
+		tokenString, _ = et.GetToken()
 	}
 
 	u.Data["json"] = "{'tokenString': '" + tokenString + "'}"

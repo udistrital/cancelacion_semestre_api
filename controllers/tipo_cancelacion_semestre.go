@@ -9,11 +9,25 @@ import (
 	"strings"
 
 	"github.com/astaxie/beego"
+	"github.com/juusechec/jwt-beego"
 )
 
 // oprations for TipoCancelacionSemestre
 type TipoCancelacionSemestreController struct {
 	beego.Controller
+}
+
+func (c *TipoCancelacionSemestreController) Prepare() {
+	tokenString := c.Ctx.Input.Query("tokenString")
+
+	et := jwtbeego.EasyToken{}
+	valido, _ := et.ValidateToken(tokenString)
+	if !valido {
+		c.Ctx.Output.SetStatus(401)
+		c.Data["json"] = "Permission Deny"
+		c.ServeJSON()
+	}
+	return
 }
 
 func (c *TipoCancelacionSemestreController) URLMapping() {

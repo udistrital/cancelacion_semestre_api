@@ -27,3 +27,4 @@ _testmain.go
 swagger
 oas_be_cancelacion_semestre
 lastupdate.tmp
+routers/commentsRouter*.go
