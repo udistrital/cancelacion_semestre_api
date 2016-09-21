@@ -130,7 +130,7 @@ func (u *UserController) GetToken() {
 	password := u.Ctx.Input.Query("password")
 
 	tokenString := ""
-	if username == "jorge" && password == "mipassword" {
+	if username == "admin" && password == "mipassword" {
 		et := jwtbeego.EasyToken{
 			Username: username,
 			Expires:  time.Now().Unix() + 3600, //Segundos
