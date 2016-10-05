@@ -129,16 +129,20 @@ func (u *UserController) GetToken() {
 	username := u.Ctx.Input.Query("username")
 	password := u.Ctx.Input.Query("password")
 
-	tokenString := ""
-	if username == "admin" && password == "mipassword" {
+	if username == "admin" && password == "pass" {
 		et := jwtbeego.EasyToken{
 			Username: username,
 			Expires:  time.Now().Unix() + 3600, //Segundos
 		}
-		tokenString, _ = et.GetToken()
+		tokenString, _ := et.GetToken()
+		u.Data["json"] = "{\"tokenString\": \"" + tokenString + "\"}"
+		u.ServeJSON()
+	} else {
+		u.Ctx.Output.SetStatus(401)
+		u.Data["json"] = "usuario o clave incorrectos"
+		u.ServeJSON()
 	}
 
-	u.Data["json"] = "{'tokenString': '" + tokenString + "'}"
-	u.ServeJSON()
+
 	return
 }
