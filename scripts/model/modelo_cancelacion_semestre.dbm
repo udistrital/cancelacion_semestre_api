@@ -76,7 +76,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<column name="id_tipo" not-null="true">
 		<type name="integer"/>
 	</column>
-	<column name="id_estado" not-null="true">
+	<column name="id_estado" not-null="true" default-value="1">
 		<type name="integer"/>
 		<comment><![CDATA[identificador de la tabla estado_cancelacion_semestre]]></comment>
 	</column>

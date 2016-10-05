@@ -11,9 +11,9 @@ import (
 )
 
 type CancelacionSemestre struct {
-	Id                   int                        `orm:"column(id);pk"`
+	Id                   int                        `orm:"column(id);pk;auto"`
 	IdTipo               *TipoCancelacionSemestre   `orm:"column(id_tipo);rel(fk)"`
-	IdEstado             *EstadoCancelacionSemestre `orm:"column(id_estado);rel(fk)"`
+	IdEstado             *EstadoCancelacionSemestre `orm:"column(id_estado);rel(fk);null"`
 	IdEstudiante         int16                      `orm:"column(id_estudiante);null"`
 	Uid                  int                        `orm:"column(uid);null"`
 	Motivo               string                     `orm:"column(motivo);null"`
@@ -35,6 +35,9 @@ func init() {
 // AddCancelacionSemestre insert a new CancelacionSemestre into database and returns
 // last inserted Id on success.
 func AddCancelacionSemestre(m *CancelacionSemestre) (id int64, err error) {
+	if m.IdEstado == nil {
+			m.IdEstado, _ = GetEstadoCancelacionSemestreById(1) //Default 1 or m.IdEstado.Id
+	}
 	o := orm.NewOrm()
 	id, err = o.Insert(m)
 	return

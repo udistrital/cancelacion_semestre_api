@@ -10,7 +10,7 @@ import (
 )
 
 type EstadoCancelacionSemestre struct {
-	Id          int   `orm:"column(id);pk"`
+	Id          int   `orm:"column(id);pk;auto"`
 	Estado      string `orm:"column(estado)"`
 	Descripcion string `orm:"column(descripcion);null"`
 }

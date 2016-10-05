@@ -77,7 +77,7 @@ ALTER TABLE academica_estudiantes.estado_cancelacion_semestre OWNER TO cancelaci
 CREATE TABLE academica_estudiantes.cancelacion_semestre(
 	id serial NOT NULL,
 	id_tipo integer NOT NULL,
-	id_estado integer NOT NULL,
+	id_estado integer NOT NULL DEFAULT 1,
 	id_estudiante bigint,
 	uid integer,
 	motivo character varying(2000),
