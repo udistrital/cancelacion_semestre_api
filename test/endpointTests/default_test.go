@@ -15,7 +15,7 @@ import (
 )
 
 func TestTipoCancelacionSemestre(t *testing.T) {
-	r, _ := http.NewRequest("GET", "oas_cancelacion_semestre//v1/tipo_cancelacion_semestre", nil)
+	r, _ := http.NewRequest("GET", "/oas_cancelacion_semestre/v1/tipo_cancelacion_semestre", nil)
 	w := httptest.NewRecorder()
 	beego.BeeApp.Handlers.ServeHTTP(w, r)
 
