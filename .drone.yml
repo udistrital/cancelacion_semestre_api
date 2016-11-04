@@ -1,0 +1,20 @@
+build:
+  npm_install:
+    environment:
+      http_proxy: http://10.20.4.15:3128/
+    image: node
+    commands:
+    - npm install
+  test:
+    image: node
+    commands:
+    - node_modules/.bin/tape 'test/**/*.js'
+  build:
+    image: node
+    commands:
+      - node_modules/.bin/browserify main.js -o bundle.js
+  package:
+    image: alpine
+    commands:
+    - tar cf package-$$BRANCH-$${COMMIT:0:7}-$$BUILD_NUMBER.tar index.html bundle.js
+- gzip package-$$BRANCH-$${COMMIT:0:7}-$$BUILD_NUMBER.tar
