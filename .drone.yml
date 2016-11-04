@@ -8,13 +8,13 @@ build:
   test:
     image: node
     commands:
-    - node_modules/.bin/tape 'test/**/*.js'
+    - cd tests; go test
   build:
     image: node
     commands:
-      - node_modules/.bin/browserify main.js -o bundle.js
+      - go build
   package:
     image: alpine
     commands:
     - tar cf package-$$BRANCH-$${COMMIT:0:7}-$$BUILD_NUMBER.tar index.html bundle.js
-- gzip package-$$BRANCH-$${COMMIT:0:7}-$$BUILD_NUMBER.tar
+    - gzip package-$$BRANCH-$${COMMIT:0:7}-$$BUILD_NUMBER.tar
