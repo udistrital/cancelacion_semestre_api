@@ -1,5 +1,5 @@
 clone:
-  path: github.com/udistrital/update_tuleap
+  path: github.com/udistrital/cancelacion_semestre_servidor
 
 test:
   image: golang
