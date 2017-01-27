@@ -5,47 +5,47 @@
 	"Deps": [
 		{
 			"ImportPath": "github.com/astaxie/beego",
-			"Comment": "v1.7.0-7-gefbde1e",
+			"Comment": "v1.6.1-308-gefbde1e",
 			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
 		},
 		{
 			"ImportPath": "github.com/astaxie/beego/config",
-			"Comment": "v1.7.0-7-gefbde1e",
+			"Comment": "v1.6.1-308-gefbde1e",
 			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
 		},
 		{
 			"ImportPath": "github.com/astaxie/beego/context",
-			"Comment": "v1.7.0-7-gefbde1e",
+			"Comment": "v1.6.1-308-gefbde1e",
 			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
 		},
 		{
 			"ImportPath": "github.com/astaxie/beego/grace",
-			"Comment": "v1.7.0-7-gefbde1e",
+			"Comment": "v1.6.1-308-gefbde1e",
 			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
 		},
 		{
 			"ImportPath": "github.com/astaxie/beego/logs",
-			"Comment": "v1.7.0-7-gefbde1e",
+			"Comment": "v1.6.1-308-gefbde1e",
 			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
 		},
 		{
 			"ImportPath": "github.com/astaxie/beego/orm",
-			"Comment": "v1.7.0-7-gefbde1e",
+			"Comment": "v1.6.1-308-gefbde1e",
 			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
 		},
 		{
 			"ImportPath": "github.com/astaxie/beego/session",
-			"Comment": "v1.7.0-7-gefbde1e",
+			"Comment": "v1.6.1-308-gefbde1e",
 			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
 		},
 		{
 			"ImportPath": "github.com/astaxie/beego/toolbox",
-			"Comment": "v1.7.0-7-gefbde1e",
+			"Comment": "v1.6.1-308-gefbde1e",
 			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
 		},
 		{
 			"ImportPath": "github.com/astaxie/beego/utils",
-			"Comment": "v1.7.0-7-gefbde1e",
+			"Comment": "v1.6.1-308-gefbde1e",
 			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
 		},
 		{
@@ -59,19 +59,19 @@
 		},
 		{
 			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/components",
-			"Rev": "2d25d1c13dd7a19245abd22faa16411481a03cdc"
+			"Rev": "f3543a4c6ead67ba00f8bb40c5ce580f6d617f0e"
 		},
 		{
 			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/controllers",
-			"Rev": "2d25d1c13dd7a19245abd22faa16411481a03cdc"
+			"Rev": "f3543a4c6ead67ba00f8bb40c5ce580f6d617f0e"
 		},
 		{
 			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/models",
-			"Rev": "2d25d1c13dd7a19245abd22faa16411481a03cdc"
+			"Rev": "f3543a4c6ead67ba00f8bb40c5ce580f6d617f0e"
 		},
 		{
 			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/routers",
-			"Rev": "2d25d1c13dd7a19245abd22faa16411481a03cdc"
+			"Rev": "f3543a4c6ead67ba00f8bb40c5ce580f6d617f0e"
 		},
 		{
 			"ImportPath": "github.com/lib/pq",
