@@ -25,7 +25,7 @@ _testmain.go
 
 # Especiales para el proyecto
 swagger
-oas_be_cancelacion_semestre
+# oas_be_cancelacion_semestre fuck
 lastupdate.tmp
 routers/commentsRouter*.go
 cancelacion_semestre_servidor

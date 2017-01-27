@@ -10,8 +10,6 @@ test:
 build:
   image: golang
   commands:
-    - find vendor
-    - ls -l /drone/src/github.com/udistrital/cancelacion_semestre_servidor/vendor/github.com/juusechec/oas_be_cancelacion_semestre/routers
     - echo building
     - go build
 
