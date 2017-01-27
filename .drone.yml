@@ -16,4 +16,4 @@ package:
     - echo packaging
     - echo tar cf package-$$BRANCH-$${COMMIT:0:7}-$$BUILD_NUMBER.tar index.html bundle.js
     - echo gzip package-$$BRANCH-$${COMMIT:0:7}-$$BUILD_NUMBER.tar
-    - echo jorge really!
+    - echo jorge hacer algo con el binario que se compilo antes, ver el proyecto coasverage_api para un ejemplo

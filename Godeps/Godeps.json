@@ -1,0 +1,92 @@
+{
+	"ImportPath": "github.com/udistrital/cancelacion_semestre_servidor",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v74",
+	"Deps": [
+		{
+			"ImportPath": "github.com/astaxie/beego",
+			"Comment": "v1.7.0-7-gefbde1e",
+			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/config",
+			"Comment": "v1.7.0-7-gefbde1e",
+			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/context",
+			"Comment": "v1.7.0-7-gefbde1e",
+			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/grace",
+			"Comment": "v1.7.0-7-gefbde1e",
+			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/logs",
+			"Comment": "v1.7.0-7-gefbde1e",
+			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/orm",
+			"Comment": "v1.7.0-7-gefbde1e",
+			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/session",
+			"Comment": "v1.7.0-7-gefbde1e",
+			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/toolbox",
+			"Comment": "v1.7.0-7-gefbde1e",
+			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/utils",
+			"Comment": "v1.7.0-7-gefbde1e",
+			"Rev": "efbde1ee77517486eac03e814e01d724ddad18e6"
+		},
+		{
+			"ImportPath": "github.com/dgrijalva/jwt-go",
+			"Comment": "v3.0.0-8-g24c63f5",
+			"Rev": "24c63f56522a87ec5339cc3567883f1039378fdb"
+		},
+		{
+			"ImportPath": "github.com/juusechec/jwt-beego",
+			"Rev": "67c514594deb12a7433878393bf10ddee844941d"
+		},
+		{
+			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/components",
+			"Rev": "2d25d1c13dd7a19245abd22faa16411481a03cdc"
+		},
+		{
+			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/controllers",
+			"Rev": "2d25d1c13dd7a19245abd22faa16411481a03cdc"
+		},
+		{
+			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/models",
+			"Rev": "2d25d1c13dd7a19245abd22faa16411481a03cdc"
+		},
+		{
+			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/routers",
+			"Rev": "2d25d1c13dd7a19245abd22faa16411481a03cdc"
+		},
+		{
+			"ImportPath": "github.com/lib/pq",
+			"Comment": "go1.0-cutoff-111-g80f8150",
+			"Rev": "80f8150043c80fb52dee6bc863a709cdac7ec8f8"
+		},
+		{
+			"ImportPath": "github.com/lib/pq/oid",
+			"Comment": "go1.0-cutoff-111-g80f8150",
+			"Rev": "80f8150043c80fb52dee6bc863a709cdac7ec8f8"
+		},
+		{
+			"ImportPath": "gopkg.in/gomail.v2",
+			"Comment": "2.0.0-23-g81ebce5",
+			"Rev": "81ebce5c23dfd25c6c67194b37d3dd3f338c98b1"
+		}
+	]
+}
