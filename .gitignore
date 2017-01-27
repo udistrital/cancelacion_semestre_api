@@ -28,3 +28,4 @@ swagger
 oas_be_cancelacion_semestre
 lastupdate.tmp
 routers/commentsRouter*.go
+cancelacion_semestre_servidor

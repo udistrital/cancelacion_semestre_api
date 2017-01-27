@@ -1,20 +1,19 @@
+test:
+  image: golang
+  commands:
+    - echo testing
+    - cd tests && go test
+
 build:
-  npm_install:
-    environment:
-      http_proxy: http://10.20.4.15:3128/
-    image: node
-    commands:
-    - npm install
-  test:
-    image: node
-    commands:
-    - cd tests; go test
-  build:
-    image: node
-    commands:
-      - go build
-  package:
-    image: alpine
-    commands:
-    - tar cf package-$$BRANCH-$${COMMIT:0:7}-$$BUILD_NUMBER.tar index.html bundle.js
-    - gzip package-$$BRANCH-$${COMMIT:0:7}-$$BUILD_NUMBER.tar
+  image: golang
+  commands:
+    - echo building
+    - go build
+
+package:
+  image: alpine
+  commands:
+    - echo packaging
+    - echo tar cf package-$$BRANCH-$${COMMIT:0:7}-$$BUILD_NUMBER.tar index.html bundle.js
+    - echo gzip package-$$BRANCH-$${COMMIT:0:7}-$$BUILD_NUMBER.tar
+    - echo jorge really!
