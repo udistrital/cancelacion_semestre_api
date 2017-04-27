@@ -58,19 +58,19 @@
 			"Rev": "67c514594deb12a7433878393bf10ddee844941d"
 		},
 		{
-			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/components",
+			"ImportPath": "github.com/udistrital/oas_be_cancelacion_api/components",
 			"Rev": "f3543a4c6ead67ba00f8bb40c5ce580f6d617f0e"
 		},
 		{
-			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/controllers",
+			"ImportPath": "github.com/udistrital/oas_be_cancelacion_api/controllers",
 			"Rev": "f3543a4c6ead67ba00f8bb40c5ce580f6d617f0e"
 		},
 		{
-			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/models",
+			"ImportPath": "github.com/udistrital/oas_be_cancelacion_api/models",
 			"Rev": "f3543a4c6ead67ba00f8bb40c5ce580f6d617f0e"
 		},
 		{
-			"ImportPath": "github.com/juusechec/oas_be_cancelacion_semestre/routers",
+			"ImportPath": "github.com/udistrital/oas_be_cancelacion_api/routers",
 			"Rev": "f3543a4c6ead67ba00f8bb40c5ce580f6d617f0e"
 		},
 		{

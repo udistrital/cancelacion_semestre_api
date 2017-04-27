@@ -1,7 +1,7 @@
 package test
 
 import (
-	_ "github.com/juusechec/oas_be_cancelacion_semestre/routers"
+	_ "github.com/udistrital/oas_be_cancelacion_api/routers"
 	"net/http"
 	"net/http/httptest"
 	"path/filepath"

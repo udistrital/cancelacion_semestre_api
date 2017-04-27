@@ -3,8 +3,8 @@ package controllers
 import (
 	"encoding/json"
 	"errors"
-	"github.com/juusechec/oas_be_cancelacion_semestre/components"
-	"github.com/juusechec/oas_be_cancelacion_semestre/models"
+	"github.com/udistrital/oas_be_cancelacion_api/components"
+	"github.com/udistrital/oas_be_cancelacion_api/models"
 	"strconv"
 	"strings"
 

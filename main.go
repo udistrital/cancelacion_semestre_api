@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "github.com/juusechec/oas_be_cancelacion_semestre/routers"
+	_ "github.com/udistrital/oas_be_cancelacion_api/routers"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
