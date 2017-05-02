@@ -1,0 +1,40 @@
+{
+  "variables": {
+    "aws_access_key": "",
+    "aws_secret_key": "",
+    "sudo": "sudo"
+  },
+  "builders": [{
+    "type": "docker",
+    "image": "centos:7.2.1511",
+    "pull": "false",
+    "commit": "true"
+  }],
+  "post-processors": [
+    [{
+      "type": "docker-tag",
+      "repository": "oas0/cancelacion_semestre",
+      "tag": "latest",
+      "only": [
+        "docker"
+      ]
+    }]
+  ],
+  "provisioners": [{
+    "type": "shell",
+    "script": "scripts/iniciar.sh",
+    "environment_vars": [
+      "SUDO={{user `sudo`}}",
+      "PROXY={{user `proxy`}}"
+    ]
+  }, {
+    "type": "shell",
+    "script": "scripts/provides_docker.sh"
+  }, {
+    "type": "shell",
+    "script": "scripts/install_utilities.sh"
+  }, {
+    "type": "shell",
+    "script": "scripts/install_golang.sh"
+  }]
+}
