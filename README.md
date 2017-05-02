@@ -1,7 +1,7 @@
 # oas_be_cancelacion_semestre
 Este es el back-end del proyecto cancelación de semestre, es un API RESTful con la entidades creadas.
 
-#REQUERIMIENTOS DE DESARROLLO
+# REQUERIMIENTOS DE DESARROLLO
 -----------------------------
 - golang: https://golang.org/doc/install
 - beego: http://beego.me/quickstart
@@ -49,6 +49,6 @@ $ go test
 
 El front-end del proyecto y las instrucciones de instalación se encuentran en https://github.com/juusechec/oas_fe_cancelacion_semestre
 
-#MODELO
+# MODELO
 -------
 ![screenshot](./scripts/model/cancelacion_semestre.png)
