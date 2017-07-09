@@ -37,3 +37,5 @@ then
 else
   $SUDO yum install -y ${list[*]} ${list_packages[*]}
 fi
+
+$SUDO yum install -y epel-release
