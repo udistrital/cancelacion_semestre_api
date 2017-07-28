@@ -3,7 +3,7 @@ package controllers
 import (
 	"time"
 	"encoding/json"
-	"github.com/udistrital/oas_be_cancelacion_api/models"
+	"github.com/udistrital/cancelacion_semestre_api/models"
 
 	"github.com/astaxie/beego"
 	"github.com/juusechec/jwt-beego"

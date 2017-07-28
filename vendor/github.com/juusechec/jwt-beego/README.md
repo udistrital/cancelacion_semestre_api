@@ -129,7 +129,7 @@ package controllers
 
 import (
 	...
-	"github.com/udistrital/oas_be_cancelacion_api/myBeego"
+	"github.com/udistrital/cancelacion_semestre_api/myBeego"
 	"github.com/juusechec/jwt-beego"
 )
 
