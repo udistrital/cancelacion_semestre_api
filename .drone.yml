@@ -1,5 +1,5 @@
 clone:
-  path: github.com/udistrital/cancelacion_semestre_servidor
+  path: github.com/udistrital/cancelacion_semestre_api
 
 test:
   image: golang
