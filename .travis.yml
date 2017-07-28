@@ -1,8 +1,14 @@
 language: go
-
 go:
- - 1.7.x
-
+- 1.7.x
 script:
- - go test -v ./...
- - GOOS=linux GOARCH=amd64 go build
+- go test -v ./...
+- GOOS=linux GOARCH=amd64 go build
+deploy:
+  provider: releases
+  api_key:
+    secure: qDRNzaYXMGJAOH/3Z+gUiOQhSEUHaCZuCKznHNFVn5G4hNIL17BrxmCXFPQKckC725oiyhvAc5U2x62yR+z6RQc8QCOJTwv8Pjj70jaj3xD9L4FzQ0P9N1Zq3rKGviF+6p3spkyeTrUz7j382a7Uxmk0JN6k+xK6TpBCvu+MS7ED644VDQ3WHtuGERYdN/QSalIQcCI2wv4d12JH/K3B9YBzj5gIJ9PA+kre+D0Bkv95GZlqJSEvy8nNpfhgMc1upW08uyxK9aafeC9TSceCbZgSw1CdgKUvrvRtS0Yb0B8dJqaSERQHjKiWvgq02rnorR1DRue29wtRff7qIzaF+VceMQNSl9OgPeEuXO/1tptbdpxvp+2QQK85ah+E4NfG0vdAOtwmec7JVK8Z7qCrIYp2HUczJAiVHjXjeG6fU8q/lePKq/nGrIEDuZG3Z7RvuF/fIxrpjlGT9PZC/zJ3IoMR9Nm5OW9M6OYApY0/gTitRF0PEfEUA/DkFWf7Oy3TSSjxudeAj1SZkGAlYhkQ+ZmeuUVEkLLChTTTwgKAVWrCftQgK4m1B9AJU8RjCtO4RGkh+lrkki+Kj4y5Irlr/MtxiGmupThtWMOvxjo4I7qbsT42Xca8XU1Z3W902fQz4eg9b01P9KXqrY9eRLVAFasWgYauY8TiQEl4OMw6X4A=
+  file: cancelacion_semestre_api
+  on:
+    repo: udistrital/cancelacion_semestre_api
+tags: true
