@@ -56,3 +56,6 @@ El front-end del proyecto y las instrucciones de instalación se encuentran en h
 # MODELO
 -------
 ![screenshot](./scripts/model/cancelacion_semestre.png)
+
+## Referencias
+- https://github.com/udistrital/update_tuleap

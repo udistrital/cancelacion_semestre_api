@@ -1,4 +1,4 @@
-package test
+package tests
 
 import (
 	_ "github.com/udistrital/cancelacion_semestre_api/routers"
