@@ -1,4 +1,7 @@
+[![Build Status](https://travis-ci.org/udistrital/cancelacion_semestre_api.svg?branch=master)](https://travis-ci.org/udistrital/cancelacion_semestre_api)
+
 # oas_be_cancelacion_semestre
+
 Este es el back-end del proyecto cancelación de semestre, es un API RESTful con la entidades creadas.
 
 Esto trabaja con JWT!!! Es importante cambiarlo ya que no es lo que usan los demás servicios de la OAS.
