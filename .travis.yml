@@ -11,4 +11,4 @@ deploy:
   file: cancelacion_semestre_api
   on:
     repo: udistrital/cancelacion_semestre_api
-tags: true
+    tags: true
