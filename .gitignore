@@ -29,3 +29,4 @@ swagger
 lastupdate.tmp
 routers/commentsRouter*.go
 cancelacion_semestre_servidor
+cancelacion_semestre_api

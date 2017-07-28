@@ -1,6 +1,8 @@
 # oas_be_cancelacion_semestre
 Este es el back-end del proyecto cancelación de semestre, es un API RESTful con la entidades creadas.
 
+Esto trabaja con JWT!!! Es importante cambiarlo ya que no es lo que usan los demás servicios de la OAS.
+
 # REQUERIMIENTOS DE DESARROLLO
 -----------------------------
 - golang: https://golang.org/doc/install
@@ -12,18 +14,20 @@ Para tener el proyecto localmente se puede ejecutar:
 
 1) Descargar el software a través del método ***go get***:
 ```bash
-$ go get github.com/juusechec/oas_be_cancelacion_semestre
+go get github.com/juusechec/oas_be_cancelacion_semestre
 ```
 2) Ingresar al directorio del proyecto:
 ```bash
-$ cd $GOPATH/src/github.com/juusechec/oas_be_cancelacion_semestre
+cd ${GOPATH%%:*}/src/github.com/juusechec/cancelacion_semestre_api
 ```
+GOPATH puede contener más de un directorio, se selecciona el [primero](http://linuxcommand.org/lc3_man_pages/bash1.html).
+
 3) Ejecutar una instancia de ***PostgreSQL*** en ***docker*** y ejecutar el script de generación de la base de datos:
 ```bash
-$ newgrp docker
-$ docker run -d -p 5432:5432 -e POSTGRESQL_USER=cancelacion_semestre -e POSTGRESQL_PASS=docker -e POSTGRESQL_DB=udistrital orchardup/postgresql
-$ exit
-$ psql -h localhost -d udistrital -U cancelacion_semestre -W < scripts/model/cancelacion_semestre.sql
+newgrp docker
+docker run -d -p 5432:5432 -e POSTGRESQL_USER=cancelacion_semestre -e POSTGRESQL_PASS=docker -e POSTGRESQL_DB=udistrital orchardup/postgresql
+exit
+psql -h localhost -d udistrital -U cancelacion_semestre -W < scripts/model/cancelacion_semestre.sql
 ```
 4) Ejecutar el proyecto con ***bee*** y abrir la interfaz de ***swagger*** (swagger-ui) con el que se puede consumir el servicio REST con el navegador deseado:
 ```bash
