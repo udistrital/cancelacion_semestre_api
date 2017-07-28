@@ -17,7 +17,7 @@ Para tener el proyecto localmente se puede ejecutar:
 
 1) Descargar el software a través del método ***go get***:
 ```bash
-go get github.com/juusechec/oas_be_cancelacion_semestre
+go get github.com/juusechec/cancelacion_semestre_api
 ```
 2) Ingresar al directorio del proyecto:
 ```bash
@@ -49,12 +49,10 @@ go get github.com/goinggo/tracelog
 
 Para ejecutar las pruebas se puede hacer:
 ```bash
-$ bee run &
-$ cd test/endpointTests
-$ go test
+go test ./...
 ```
 
-El front-end del proyecto y las instrucciones de instalación se encuentran en https://github.com/juusechec/oas_fe_cancelacion_semestre
+El front-end del proyecto y las instrucciones de instalación se encuentran en https://github.com/udistrital/cancelacion_semestre_cliente
 
 # MODELO
 -------
