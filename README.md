@@ -34,8 +34,8 @@ psql -h localhost -d udistrital -U cancelacion_semestre -W < scripts/model/cance
 ```
 4) Ejecutar el proyecto con ***bee*** y abrir la interfaz de ***swagger*** (swagger-ui) con el que se puede consumir el servicio REST con el navegador deseado:
 ```bash
-$ bee run -downdoc=true -gendoc=true
-$ xdg-open http://127.0.0.1:8080/swagger/
+bee run -downdoc=true -gendoc=true
+xdg-open http://127.0.0.1:8080/swagger/
 ```
 # PRUEBAS UNITARIAS
 -------------------
