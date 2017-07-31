@@ -20,6 +20,7 @@ build:
       - GOOS=linux GOARCH=amd64 go build -o target/cancelacion_semestre_api-$${COMMIT:0:7}-linux-x86_64
       - GOOS=windows GOARCH=amd64 go build -o target/cancelacion_semestre_api-$${COMMIT:0:7}-windows-x86_64.exe
       - GOOS=darwin GOARCH=amd64 go build -o target/cancelacion_semestre_api-$${COMMIT:0:7}-darwin-x86_64
+      - se suben cambios a github también
     when:
       branch: master
 
