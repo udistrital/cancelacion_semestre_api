@@ -55,7 +55,7 @@
 		},
 		{
 			"ImportPath": "github.com/juusechec/jwt-beego",
-			"Rev": "67c514594deb12a7433878393bf10ddee844941d"
+			"Rev": "1542fd5f660c61e1cc9062c97d4537d8ad7120c0"
 		},
 		{
 			"ImportPath": "github.com/lib/pq",
@@ -71,6 +71,29 @@
 			"ImportPath": "gopkg.in/gomail.v2",
 			"Comment": "2.0.0-23-g81ebce5",
 			"Rev": "81ebce5c23dfd25c6c67194b37d3dd3f338c98b1"
+		},
+		{
+			"ImportPath": "github.com/smartystreets/assertions",
+			"Comment": "1.6.0-27-g4ea54c1",
+			"Rev": "4ea54c1f28ad3ae597e76607dea3871fa177e263"
+		},
+		{
+			"ImportPath": "github.com/smartystreets/assertions/internal/go-render/render",
+			"Comment": "1.6.0-27-g4ea54c1",
+			"Rev": "4ea54c1f28ad3ae597e76607dea3871fa177e263"
+		},
+		{
+			"ImportPath": "github.com/smartystreets/assertions/internal/oglematchers",
+			"Comment": "1.6.0-27-g4ea54c1",
+			"Rev": "4ea54c1f28ad3ae597e76607dea3871fa177e263"
+		},
+		{
+			"ImportPath": "github.com/jtolds/gls",
+			"Rev": "77f18212c9c7edc9bd6a33d383a7b545ce62f064"
+		},
+		{
+			"ImportPath": "github.com/smartystreets/goconvey/convey",
+			"Rev": "9e8dc3f972df6c8fcc0375ef492c24d0bb204857"
 		}
 	]
 }

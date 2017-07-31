@@ -1,5 +1,10 @@
+[![Build Status](https://travis-ci.org/juusechec/jwt-beego.svg?branch=master)](https://travis-ci.org/juusechec/jwt-beego)
+[![Go Report Card](https://goreportcard.com/badge/github.com/juusechec/jwt-beego)](https://goreportcard.com/report/github.com/juusechec/jwt-beego)
+[![GoDoc Reference](https://godoc.org/github.com/juusechec/jwt-beego?status.svg)](http://godoc.org/github.com/juusechec/jwt-beego)
+[![Coverage Status](https://coveralls.io/repos/juusechec/jwt-beego/badge.svg?branch=master)](https://coveralls.io/r/juusechec/jwt-beego?branch=master)
+
 # jwt-beego
-Una implementación simple de dgrijalva/jwt-go para beego. 
+Una implementación simple de dgrijalva/jwt-go para beego.
 
 Pasos para implementar:
 
@@ -13,7 +18,7 @@ package controllers
 
 import (
 	...
-	
+
 	"github.com/juusechec/jwt-beego"
 )
 
@@ -54,7 +59,7 @@ package controllers
 
 import (
 	...
-	
+
 	"github.com/juusechec/jwt-beego"
 )
 
@@ -92,7 +97,6 @@ import (
 
 //Se genera un tipo Controller que hereda de beego.Controller
 type Controller struct {
-	DisableJWT false
 	beego.Controller
 }
 
@@ -104,16 +108,14 @@ type Controller struct {
 //var s *string //var r **string = &s //fmt.Println(r)//0x1040a120
 func (c *Controller) Prepare() {
 	//Lo que quieras hacer en todos los controladores
-	c.DisableJWT == false {
-		tokenString := c.Ctx.Input.Query("tokenString")
-	
-		et := jwtbeego.EasyToken{}
-		valido, _ := et.ValidateToken(tokenString)
-		if !valido {
-			c.Ctx.Output.SetStatus(401)
-			c.Data["json"] = "Permission Deny"
-			c.ServeJSON()
-		}
+	tokenString := c.Ctx.Input.Query("tokenString")
+
+	et := jwtbeego.EasyToken{}
+	valido, _ := et.ValidateToken(tokenString)
+	if !valido {
+		c.Ctx.Output.SetStatus(401)
+		c.Data["json"] = "Permission Deny"
+		c.ServeJSON()
 	}
 	return
 }
@@ -129,7 +131,7 @@ package controllers
 
 import (
 	...
-	"github.com/udistrital/cancelacion_semestre_api/myBeego"
+	"github.com/juusechec/jwt-beego-implementation/myBeego"
 	"github.com/juusechec/jwt-beego"
 )
 
@@ -141,6 +143,9 @@ type MiObjetoController struct {
 
 ...
 ```
+
+## Ejemplo de uso:
+- https://github.com/juusechec/jwt-beego-implementation
 
 Se basa en:
 * https://github.com/someone1/gcp-jwt-go
