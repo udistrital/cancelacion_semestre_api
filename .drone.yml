@@ -8,7 +8,7 @@ test:
     - cd tests && go test
 
 build:
-  image: golang:1.8s
+  image: golang:1.8
   commands:
     - echo building
     - mkdir -p target
