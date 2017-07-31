@@ -2,13 +2,13 @@ clone:
   path: github.com/udistrital/cancelacion_semestre_api
 
 test:
-  image: golang
+  image: golang:1.8
   commands:
     - echo testing
     - cd tests && go test
 
 build:
-  image: golang
+  image: golang:1.8s
   commands:
     - echo building
     - mkdir -p target
