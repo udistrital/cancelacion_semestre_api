@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/udistrital/cancelacion_semestre_api.svg?branch=master)](https://travis-ci.org/udistrital/cancelacion_semestre_api)
+[![Build Status Travis CI](https://travis-ci.org/udistrital/cancelacion_semestre_api.svg?branch=master)](https://travis-ci.org/udistrital/cancelacion_semestre_api)
 
-[![Build Status](https://drone.udistritaloas.edu.co/api/badges/academica/cancelacion_semestre_api/status.svg)](https://drone.udistritaloas.edu.co/academica/cancelacion_semestre_api)
+[![Build Status Drone CD](https://drone.udistritaloas.edu.co/api/badges/academica/cancelacion_semestre_api/status.svg)](https://drone.udistritaloas.edu.co/academica/cancelacion_semestre_api)
 
 # cancelacion_semestre_api
 
