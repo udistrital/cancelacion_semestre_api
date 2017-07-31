@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/udistrital/cancelacion_semestre_api.svg?branch=master)](https://travis-ci.org/udistrital/cancelacion_semestre_api)
 
-# oas_be_cancelacion_semestre
+[![Build Status](https://drone.udistritaloas.edu.co/api/badges/academica/cancelacion_semestre_api/status.svg)](https://drone.udistritaloas.edu.co/academica/cancelacion_semestre_api)
+
+# cancelacion_semestre_api
 
 Este es el back-end del proyecto cancelación de semestre, es un API RESTful con la entidades creadas.
 
