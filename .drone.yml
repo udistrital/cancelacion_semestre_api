@@ -2,21 +2,19 @@ clone:
   path: github.com/udistrital/cancelacion_semestre_api
 
 test:
-  unit_tests:
-    image: golang
-    commands:
-      - echo testing
-      - cd tests && go test
+  image: golang
+  commands:
+    - echo testing
+    - cd tests && go test
 
 build:
-  build_all:
-    image: golang
-    commands:
-      - echo building
-      - mkdir -p target
-      - GOOS=linux GOARCH=amd64 go build -o target/update-tuleap-$${COMMIT:0:7}-linux-x86_64
-      - GOOS=windows GOARCH=amd64 go build -o target/update-tuleap-$${COMMIT:0:7}-windows-x86_64.exe
-      - GOOS=darwin GOARCH=amd64 go build -o target/update-tuleap-$${COMMIT:0:7}-darwin-x86_64
+  image: golang
+  commands:
+    - echo building
+    - mkdir -p target
+    - GOOS=linux GOARCH=amd64 go build -o target/update-tuleap-$${COMMIT:0:7}-linux-x86_64
+    - GOOS=windows GOARCH=amd64 go build -o target/update-tuleap-$${COMMIT:0:7}-windows-x86_64.exe
+    - GOOS=darwin GOARCH=amd64 go build -o target/update-tuleap-$${COMMIT:0:7}-darwin-x86_64
 
 package:
   image: alpine
