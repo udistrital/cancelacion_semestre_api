@@ -7,6 +7,7 @@ script:
 deploy:
   provider: releases
   api_key:
+    # generated with $ travis encrypt GITHUB_TOKEN="FROM_USER_UDISTRITAL"
     secure: aJaBl5IQ2Hto9SiweWK+x8bk7+fSSOYpE9hMknBK4pppRSU+5LCKnuGMLLyhXCQWb3/9mTQdtLXearAj3ipkW0IAzVT/ezXxEnOcrwyO2twBQbCq1nHa+tL7pmOmh0xu/X/hD06Yy5A1h8RFDC8jmeHhKDtiz8Bb+IBri10gVE5T0c1hU/29FwVjGgdJdlZ55LW+d5JbkfKyOF3BBIXpUOIRvjslogh0n4/9o52wiHZPdfFnLRdEkpXQI/lHI+I2cBgZiLyghVPbFJWnFKT4vzAAf2iW8jX4Z45wyFLZ+4lJg8GPzFSSURI01sUl2Qaa/QpLLIYFcgqVsVCBJCinUUhMlJtyoDqh/q9kw9Td6dP5OZFWCG9L+AcSNzlgmK5S/I18CTsg1rtPwzWgCjjR/nelkvXDwcuaepWminAFbqRqHJ0Qsrpjk+HN9Ox+/H0F+O1ts2NHsdJ+ZfHfV7+q0fDHc94skKJ2m5qauB3ohnFF36lWI/mgRnRstqJvHHjYKWiFKvFMbwr/69E/V1pGhEb2m13xjEuLC+musCiW1Vp+H4QEnzJKhUE2wUvzspnKSFzfucAueX0qR2skczb057F8CClMzHpuUB46RnqjoAAKimufVoMogom0Hmawh36YKK507dFyL/QiCJmoAVTR/I9T4jVZIp/Cvpolu/Dy/kI=
   file: cancelacion_semestre_api
   skip_cleanup: true
